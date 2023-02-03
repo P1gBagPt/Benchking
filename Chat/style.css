@@ -1,0 +1,37 @@
+
+
+#page-wrap                      { max-width: 500px;  display: block;
+  margin-left: auto;
+  margin-right: auto;
+margin-top: 2.5rem;}
+
+#chat-wrap                      { border: 1px solid rgb(0, 0, 0); margin: 0 0 15px 0; }
+#chat-area                      { height: 300px; overflow: auto; border: 1px solid #666; padding: 20px; background: white; }
+#chat-area span                 { color: white; background: #333; padding: 4px 8px; -moz-border-radius: 5px; -webkit-border-radius: 8px; margin: 0 5px 0 0; }
+#chat-area p                    { padding: 8px 0; border-bottom: 1px solid #ccc; }
+
+#name-area                      { position: absolute; top: 12px; right: 0; color: rgb(0, 0, 0); font: bold 12px "Lucida Grande", Sans-Serif; text-align: right; }   
+#name-area span                 { color: #fa9f00; }
+
+#send-message-area p            { float: left; color: rgb(0, 0, 0); padding-top: 27px; font-size: 14px; }
+#sendie                         { border: 3px solid rgb(0, 0, 0); width: 360px; padding: 10px; font: 12px "Lucida Grande", Sans-Serif; float: right; }
+
+
+.page-wrap p{
+    color: black !important;
+}
+
+.dropdown-menu{
+    background: #3E5096;
+    border: 2px solid #fff !important;
+  }
+
+
+  @media only screen and (max-width : 768px) {
+    #chat-area {
+      width: 100% !important;
+    }
+
+  
+
+  }

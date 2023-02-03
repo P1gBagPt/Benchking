@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  color: #222;
+}
+
+
+/*------------Navbar------------------*/
+.navbar{
+  height: 150px;
+  padding: 30px 10%;
+  width: 100%;
+  margin-bottom: 100px;
+
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+
+}
+
+/* Set the border color */
+          
+.custom-toggler.navbar-toggler {
+      border: 2px solid #fff;
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+        
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250, 250, 250)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+
+.navbar-custom {
+  background-color: #3e5096;
+}
+
+.nav-item{
+  padding: 8px 10px;
+}
+
+.nav-item a{
+  color: #fff;
+}
+
+.nav-item a:hover{
+  color: #00bcd4;
+  transition: all 0.5s;
+}
+
+
+
+.nav-item button{
+  border: none;
+  height: 42px;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border-radius: 0%;
+	transition: all 0.5s;
+}
+
+#btn-log{
+  border: 2px solid #fff;
+  background: transparent;
+
+}
+
+#btn-log:hover{
+  background: #fff;
+  color: #00bcd4;
+  transition: all 0.5s;
+}
+
+#btn-reg{
+	background-color: #00bcd4;
+}
+
+#mensagem_erro{
+  margin-bottom: 18px;
+  color: black;
+  font-size: 15px;
+  transition: all 1s ease;
+  display: block;
+  background: rgb(180, 18, 18);
+  text-align: center;
+  transition: all 0.6s ease;
+
+}
+
+.mensagem_error{
+  background: rgb(185, 20, 20);
+  font-size: 15px;
+  transition: all 1s ease;
+  color: black;
+  width: 20rem;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+
+}
+
+@media only screen and (max-width : 768px) {
+  .navbar-collapse {
+    border-radius: 0% !important;
+    background: #3e5096 !important;
+    border: 2px solid #fff !important;
+    z-index: 9999;
+  }
+
+  .mensagem_error{
+    width: 95%;
+  }
+
+}
+
+
+
+.dropdown-menu{
+  background: #3E5096;
+  border: 2px solid #fff !important;
+}
+
+.dropdown-menu a{
+  color:  #fff;
+}
+
+.dropdown-menu a:hover{
+  background: transparent;
+  color: #00bcd4;
+  transition: all 0.5s;
+}
+
+
+
+/*------------Fim navbar------------------*/
+
+
+/*------------Body------------------*/
+
+.resp-container {
+
+  border: 2px solid #3E5096;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+
+}
+
+#resp-container{
+  width: 550px;
+  height: 310px;
+}
+
+@media only screen and (max-width : 768px) {
+  #resp-container{
+    width: 95%;
+    height: 310px;
+  }
+}
+
+
+
+/*Caixa dos comentarios*/
+.comentery-box{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+  border: 1px solid black;
+  margin-bottom: 1.8rem;
+}
+
+.comentery-box h4{
+  text-align: center;
+}
+
+/*Nome do utilizador*/
+.comentery-box span{
+  color: white; background: #333;
+  padding: 4px 8px; 
+  margin: 0 5px 0 0;
+}
+
+/*Comentário*/
+.comentery-box p{
+  color: #333;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+
+/*Inserir comentário*/
+.textarea-comentarios{
+  width: 550px;
+}
+
+
+textarea{
+
+  padding:10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black ;
+  font-size:16px;
+  resize: none;
+  overflow: hidden;
+  padding: 0;
+  outline: none;
+
+}
+
+
+
+
+@media only screen and (max-width : 768px) {
+  .comentery-box{
+    width: 95%;
+  }
+  .textarea-comentarios{
+    width: 95%;
+    
+  }
+}
+
+
+
+
+.btn-comentario{
+  width: 6rem;
+  display: block;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: 42.5rem;
+  margin-bottom: 2rem;
+
+}
+
+
+@media only screen and (max-width : 768px) {
+  .btn-comentario{
+    margin-left: auto; 
+    margin-right: 0.6rem;
+  }
+}
+
+
+
+.bottom_body{
+    margin-bottom: 255px;
+  }
+
+
+
+
+/*------------Fim Body------------------*/
+
+
+
+
+/*------------footer------------------*/
+
+
+
+/*Social*/
+.social a:link{
+  color: #fff;
+  text-decoration: none;
+}
+.social a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+.social a:active{
+  color: #fff;
+  text-decoration: none;
+}
+.social a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.social{
+  height: 100px;
+}
+/*Fim Social*/
+
+
+footer{
+  padding-top: 2rem;
+  background-color: #3e5096;
+}
+
+hr.light{
+  
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+
+}
+
+.col-md-3 img{
+  border: none;
+}
+
+.col-md-3 a, p{
+  color: #fff;
+  text-decoration: none;
+}
+
+#btn-download{
+  color: #fff;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#btn-download:hover{
+  color: #00bcd4;
+}
+
+.col-md-3 a:hover{
+  color: #00bcd4;
+  transition: 0.3s ease-out;
+}
+
+
+
+#footer-enviar{
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0%;
+	transition: all 0.5s;
+  border: 2px solid #fff;
+}
+
+#footer-enviar:hover{
+  background: #fff;
+  color: #00bcd4;
+  transition: all 0.5s;
+}
+
+#footer-email{
+  width: 225px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  
+}
+
+/*------------Fim footer------------------*/
+
+
+/*------------Copyright------------------*/
+
+.bottom p{
+  text-align: center;
+  color: #222;
+  padding: 15px 0;
+}
+
+/*------------Fim Copyright------------------*/
+
+.navbar.collapsing,
+.navbar.show {
+    background:black !important;
+}
+
+@media only screen and (max-width : 768px) {
+  .navbar-collapse {
+    background: #6C757D;
+    border-radius: 8%;
+}
+}
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 85%;
+  width: 100%;
+}
+
+.card-container.card {
+  max-width: 350px;
+  padding: 40px 40px;
+}
+
+/*Card component*/
+.card {
+  background-color: #F7F7F7;
+  /* just in case there no content*/
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  /* shadows and rounded borders */
+  border-radius: 20px;
+  box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.3);
+  height: 845px;
+}
+
+
+.mensagem_error{
+  background: rgb(167, 76, 76);
+  font-size: 15px;
+  transition: all 1s ease;
+  color: black;
+  width: 20rem;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  text-align: center;
+  width: 100%;
+
+}
+
+/*Logo Bencjking*/
+.profile-img-card {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.form-dashboard input[type="text"]{
+  border-radius: 0%;
+  background: #F7F7F7;
+  border: none;
+  border-bottom: 1px solid #12539e;
+  color: black;
+  outline: none;
+  padding: 2px 40px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  box-shadow: none !important;
+}
+
+
+/*-------------------------------------------------*/
+
+
+
+.profile-pic-div{
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid grey;
+  position: block;
+
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-pic-div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#file{
+    display: none;
+    
+}
+
+#enviar_imagem{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    text-align: center;
+    background: transparent;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-100%);
+    /*display: none;*/
+}
+/*-------------------------------------------------*/
+
+.img_nome, .img_apelido, .img_email, .img_username{
+  overflow: hidden;
+  transform: translate(55%, -65%);
+  position: absolute;
+}
+
+
+.img_nome, .img_apelido, .img_email, .img_username{
+    overflow: hidden;
+    position: absolute;
+}
+
+.barra_links, a{
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    color: grey;
+}
+
+
+
+.enviar_imagem input[type="submit"]{
+  background: #F7F7F7;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: #12539e;
+}
+
+.enviar_imagem input[type="submit"]:hover{
+  color: #154780;
+}
+
+
+
+label{
+    display: block;
+    text-align: center;
+}
+
+.caixas_informacoes input[type="box"]{
+    border: none;
+    border-bottom: 1px solid #12539e;
+    background:#F7F7F7;
+    color: black;
+    outline: none;
+    width: 225px;
+    box-sizing: border-box;
+    height: 45px;
+    padding: 2px 40px;
+    
+}
+
+.caixas_informacoes input::placeholder{
+   text-align: center;  
+}
+
+.caixas_informacoes input{
+    text-align: center;  
+ }
+
+.btn.btn-atualizarInfo {
+    margin-top: 1.5rem;
+    margin-bottom: 5px;
+    padding: 0px;
+    transition: all 0.218s;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #12539e;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.voltar{
+    margin-top: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+  
+
+/*------------Fim footer------------------*/
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

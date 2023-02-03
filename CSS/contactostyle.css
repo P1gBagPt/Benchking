@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 85%;
+  width: 100%;
+}
+
+
+/*------------Navbar------------------*/
+.navbar{
+  height: 150px;
+  padding: 30px 10%;
+  width: 100%;
+
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+
+}
+
+.dropdown-menu {
+  background: #3e5096 !important;
+
+}
+
+/* Set the border color */
+          
+.custom-toggler.navbar-toggler {
+      border: 2px solid #fff;
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+        
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250, 250, 250)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+
+.navbar-custom {
+  background-color: #3e5096;
+}
+
+.nav-item{
+  padding: 8px 10px;
+}
+
+.nav-item a{
+  color: #fff;
+}
+
+.nav-item a:hover{
+  color: #00bcd4;
+  transition: all 0.5s;
+}
+
+
+
+.nav-item button{
+  border: none;
+  height: 42px;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border-radius: 0%;
+	transition: all 0.5s;
+}
+
+#btn-log{
+  border: 2px solid #fff;
+  background: transparent;
+
+}
+
+#btn-log:hover{
+  background: #fff;
+  color: #00bcd4;
+  transition: all 0.5s;
+}
+
+#btn-reg{
+	background-color: #00bcd4;
+}
+
+#mensagem_erro{
+
+  margin-bottom: 18px;
+
+  color: red;
+
+  font-size: 15px;
+
+  transition: all 1s ease;
+
+  display: block;
+
+}
+
+@media only screen and (max-width : 768px) {
+  .navbar-collapse {
+    border-radius: 0% !important;
+    background: #3e5096 !important;
+    border: 2px solid #fff !important;
+    z-index: 9999;
+}
+}
+
+
+
+.dropdown-menu{
+  background: transparent;
+  border: 2px solid #fff !important;
+}
+
+.dropdown-menu a{
+  color:  #fff;
+}
+
+.dropdown-menu a:hover{
+  background: transparent;
+  color: #00bcd4;
+  transition: all 0.5s;
+}
+
+
+
+/*------------Fim navbar------------------*/
+
+
+
+
+
+
+
+
+/*-----------------------------BODY-----------------------------*/
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+  }
+  
+  /*Card component*/
+  .card {
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    border-radius: 20px;
+    box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.3);
+    height: 650px;
+    margin-bottom: 50px;
+  }
+  
+  .mensagem_contacto{
+  
+    margin-bottom: 18px;
+  
+    color: black;
+  
+    font-size: 15px;
+  
+    transition: all 1s ease;
+  
+    display: block;
+  
+    text-align: center;
+
+    background: lightgreen;
+
+    height: 100%;
+  
+    text-align: center;
+  
+    transition: all 0.6s ease;
+  
+  }
+  
+  #mensagem_erro{
+  
+    margin-bottom: 18px;
+  
+    color: black;
+  
+    font-size: 15px;
+  
+    transition: all 1s ease;
+  
+    display: block;
+  
+    text-align: center;
+
+    background: rgb(167, 76, 76);
+
+    height: 100%;
+  
+    text-align: center;
+  
+    transition: all 0.6s ease;
+  
+  }
+
+  /*Logo Bencjking*/
+  .profile-img-card {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+
+ .allInputs input{
+    border: 1px solid #12539e;
+    outline: none;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    font-size: 1rem;
+
+    /*Tamanho lateral*/
+    width: 100%;
+    /*Altura*/
+    height: 50px;
+    border-radius: 0%;
+
+    color: black;
+ }
+  
+.allInputs textarea { 
+    overflow:auto; 
+    width: 100%;
+    resize:none;
+    border: 1px solid #12539e;
+    border-radius: 0%;
+    color: black;
+} 
+
+.allInputs ::placeholder{
+    color: grey;
+    opacity: 1;
+}
+
+  .btn.btn-contacto {
+    margin-top: 1.5rem;
+    margin-bottom: 5px;
+    padding: 0px;
+    transition: all 0.218s;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #12539e;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+/*-----------------------------FIM BODY-----------------------------*/
+
+
+
+
+
+
+/*------------footer------------------*/
+
+
+
+/*Social*/
+.social a:link{
+  color: #fff;
+  text-decoration: none;
+}
+.social a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+.social a:active{
+  color: #fff;
+  text-decoration: none;
+}
+.social a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.social{
+  height: 100px;
+}
+/*Fim Social*/
+
+
+footer{
+  padding-top: 2rem;
+  background-color: #3e5096;
+}
+
+hr.light{
+  
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+
+}
+
+.col-md-3 a, p{
+  color: #fff;
+  text-decoration: none;
+}
+
+#btn-download{
+  color: #fff;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#btn-download:hover{
+  color: #00bcd4;
+}
+
+.col-md-3 a:hover{
+  color: #00bcd4;
+  transition: 0.3s ease-out;
+}
+
+
+
+#footer-enviar{
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0%;
+	transition: all 0.5s;
+  border: 2px solid #fff;
+}
+
+#footer-enviar:hover{
+  background: #fff;
+  color: #00bcd4;
+  transition: all 0.5s;
+}
+
+#footer-email{
+  width: 225px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  
+}
+
+/*------------Fim footer------------------*/
+
+
+/*------------Copyright------------------*/
+
+.bottom p{
+  text-align: center;
+  color: #222;
+  padding: 15px 0;
+}
+
+/*------------Fim Copyright------------------*/
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

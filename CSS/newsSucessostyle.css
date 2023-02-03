@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 85%;
+  width: 100%;
+}
+
+.card-container.card {
+  max-width: 350px;
+  padding: 40px 40px;
+}
+
+/*Card component*/
+.card {
+  background-color: #F7F7F7;
+  /* just in case there no content*/
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  /* shadows and rounded borders */
+  border-radius: 20px;
+  box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.3);
+  height: 350px;
+}
+
+
+/*Logo Benchking*/
+.profile-img-card {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+
+
+.news_sucesso_text{
+    text-align: center;
+    font-size: 25px;
+}
+
+.inicio-h3 a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 35px;
+    color: #12539e;
+    margin-top: 25px;
+}
+
+.inicio-h3{
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.pass_sucesso a{
+    width: 40;
+    outline: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    top: 50%;
+    left: 20%;
+    position: absolute;
+    text-decoration: none;
+    color: #212121;
+}
+
+.pass_sucesso:focus{
+	outline: none;
+}
+
+
+.redirecao a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #212121;
+    text-align: center;
+}
+
+.redirecao a:hover{
+    color: #12539e;
+}
+  
+
+/*------------Fim footer------------------*/
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
